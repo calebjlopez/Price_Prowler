@@ -1,0 +1,40 @@
+body #page .contact-section .banner-ad{text-align: center; height: 600px; background: rgba(65, 65, 65, 0.7); border-radius: 35px; padding: 1em;}
+body #page .contact-section .banner-ad p{font-family: var(--global-font-family); font-size: 0.875em; font-weight: 400; color: #fff;}
+body #page .contact-section .contact-form{max-width: 550px; margin: 0 auto; padding: 2.5em;}
+body #page .contact-section .contact-form h1{font-family: var(--global-font-family); font-size: 1.375em; font-weight: 400; color: #0FBA20;}
+body #page .contact-section{padding-top: 2em;}
+body #page .contact-section .contact-form .form-group{margin-bottom: 35px;}
+body #page .contact-section .contact-form input.text::placeholder{font-family: "poppins" !important}
+body #page .contact-section .contact-form input.text{width: 95%; margin: 0 auto; padding: 1em 0 1em 0.5em; color: #0FBA20;}
+body #page .contact-section .contact-form input.text::placeholder{color: #0FBA20;}
+body #page .contact-section .contact-form textarea.message-box{width: 95%; margin: 0 auto; resize: none; height: 10em; padding-right: 1.5em;}
+body #page .contact-section .contact-form textarea.message-box::placeholder{color: #0FBA20; font-family: "poppins" !important; padding-left: 0.3em;}
+body #page .contact-section .contact-form .acceptance{display: flex;}
+body #page .contact-section .contact-form .acceptance input{width: 22px; height: 22px; background: #fff;}
+body #page .contact-section .contact-form .acceptance input[type="checkbox"]{padding-bottom: 2em;}
+body #page .contact-section .contact-form .acceptance label{font-family: var(--global-font-family); font-size: 0.875em; font-weight: 400; color: #E3E3E3; text-align: justify;}
+body #page .contact-section .contact-form .acceptance label a{color: #0FBA20;}
+body #page .contact-section .contact-form .submit{text-align: right;}
+body #page .contact-section .contact-form  input.submit-btn{background: #12DE26; font-size: 0.938em; font-weight: 700; color: #021C04; border-radius: 999px; padding: 1em 2.5em; border: none;}
+body #page .contact-section .contact-form  input.submit-btn:hover{cursor: pointer; background-color: #08b519;}
+
+@media (max-width: 767px){
+    body{font-size: 12px; overflow-x: hidden;}
+    body .container{max-width: initial !important;}
+    body .flex-row{flex-direction: column;}
+    body .flex-row .col-1{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-2{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-3{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-4{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-5{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-6{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-7{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-8{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-9{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-10{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-11{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-12{flex: 0 0 100%; width: 100%;}
+    /* Contact */
+    body #page .contact-section .banner-ad{height: 15em; margin-top: 5em;}
+    body #page .contact-section .contact-form textarea.message-box{padding-right: 0.5em;}
+}

@@ -1,0 +1,26 @@
+.search-wrapper .search-container{
+    justify-content: center;
+}
+
+table {
+    border-collapse:collapse;
+    border-radius: 2em;
+    color: #626161;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+
+  th,td{
+    padding: 1em 3em;
+    background: #423f3f;
+    border: 1px solid #626161; 
+    text-align: center;
+  }
+
+  th{
+    font-weight: lighter;
+  }
+
+  th:nth-child(1){
+    padding: 0 10em;
+  }

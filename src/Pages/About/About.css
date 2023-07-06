@@ -1,0 +1,28 @@
+body #page .about-section{padding-top: 2em;}
+body #page .about-section .banner-ad{text-align: center; height: 600px; background: rgba(65, 65, 65, 0.7); border-radius: 35px; padding: 1em;}
+body #page .about-section .banner-ad p{font-family: var(--global-font-family); font-size: 0.875em; font-weight: 400; color: #fff;}
+body #page .about-section .about-txt{text-align: center;}
+body #page .about-section .about-txt h1{font-family: var(--global-font-family); font-size: 4em; font-weight: 600; color: #E3E3E3; margin: 0 0 0.6em 0;}
+body #page .about-section .about-txt p{font-family: var(--global-font-family); font-size: 0.875em; font-weight: 400; line-height: 2.4; max-width: 680px; margin: 0 auto; color: #AEAEAE;}
+
+@media (max-width: 767px){
+    body{font-size: 12px; overflow-x: hidden;}
+    body .container{max-width: initial !important;}
+    body .flex-row{flex-direction: column;}
+    body .flex-row .col-1{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-2{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-3{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-4{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-5{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-6{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-7{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-8{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-9{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-10{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-11{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-12{flex: 0 0 100%; width: 100%;}
+    /* About Us */
+    body #page .about-section .banner-ad{height: 15em; margin-top: 4em;}
+    body #page .about-section .about-txt h1{font-size: 3.2em; margin: 0.6em 0 0.4em 0;}
+    body #page .about-section .about-txt p{line-height: 2; font-size: 1.075em; margin: 0 auto 3em auto;}
+}

@@ -1,0 +1,69 @@
+body #page .main-section .main-form .my-form form .submit-btn a{background: #12DE26; font-size: 0.938em; font-weight: 700; color: #021C04; border-radius: 999px; padding: 1.4em 2.5em; border: none;}
+body #page .vendor-ticks .flex-row{align-items: center; justify-content: center;}
+body #page .vendor-ticks .vendor-head h2{font-family: var(--global-font-family); font-size: 1.250em; font-weight: 500; color: #fff;}
+body #page .vendor-ticks .vendor-tick{display: flex; align-items: center; margin-right: 1em;}
+body #page .vendor-ticks .vendor-tick:last-child{margin-right: 0;}
+body #page .vendor-ticks .vendor-tick label{font-family: var(--global-font-family); font-size: 1.250em; font-weight: 500; color: #fff;}
+body #page .vendor-ticks .vendor-tick input[type=checkbox]{width: 22px; height: 22px; background: #fff;}
+body #page .vendor-ticks .vendor-tick input[type=checkbox]:checked + span{width: 22px; height: 22px; background: url('../images/tick.png') no-repeat; background-size: cover; background-position: center center; position: absolute; bottom: 0; left: 0;}
+body #page .brands-logo-section{margin-top: 6em;}
+body #page .brands-logo-section .brands-logos{max-width: 1156px; margin: 0 auto;}
+body #page .brands-logo-section .brands-logos ul{margin: 0; padding: 0; list-style: none; display: flex; align-items: center; justify-content: space-between;}
+body #page .brands-logo-section .brands-logos ul li img{width: 100%; height: auto; max-width: initial;}
+
+body #page .main-section{padding-top: 2em;}
+body #page .main-section .banner-ad{text-align: center; height: 550px; background: rgba(65, 65, 65, 0.7); border-radius: 35px; padding: 1em;}
+body #page .main-section .banner-ad p{font-family: var(--global-font-family); font-size: 0.875em; font-weight: 400; color: #fff;}
+body #page .main-section .main-form{text-align: center;}
+body #page .main-section .main-form h1{font-family: var(--global-font-family); font-size: 4em; font-weight: 600; color: #E3E3E3; margin: 0 0 0.5em 0; line-height: 1;}
+body #page .main-section .main-form p{font-family: var(--global-font-family); font-size: 0.875em; font-weight: 400; color: #AEAEAE; line-height: 3.5; margin: 0 0 3em 0;}
+body #page .main-section .main-form .my-form form{margin-bottom: 2.500em;}
+body #page .main-section .main-form .my-form form .inputs{margin-right: 1.875em; display: flex; align-items: center; justify-content: center;}
+body #page .main-section .main-form .my-form form .inputs input.prod-input{border: none; padding: 1.5em 3em; color: #8F8F8F; font-weight: 400; border-radius: 999px 0 0 999px; background: #414141; border-right: 1px solid #8F8F8F;}
+body #page .main-section .main-form .my-form form .inputs select.unit-select{border: none; padding: 1.5em 3em; color: #8F8F8F; font-weight: 400; border-radius: 0 999px 999px 0; background: #414141;}
+body #page .main-section .main-form .my-form form .submit-btn button.submit-button{background: #12DE26; font-size: 0.938em; font-weight: 700; color: #021C04; border-radius: 999px; padding: 1.5em 2em; border: none;}
+body #page .main-section .main-form .my-form form .submit-btn button.submit-button:hover{cursor: pointer; background-color: #08b519;}
+body #page .main-section .main-form .my-form form .submit-btn {margin-top: 30px;}
+body #page .vendor-ticks{margin-top: 30px;}
+body #page .vendor-ticks{display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
+body #page .vendor-ticks > *{display: flex; align-items: center; margin-right: 1em;}
+body #page .vendor-ticks .vendor-head h2{font-family: var(--global-font-family); font-size: 1.250em; font-weight: 500; color: #fff; margin: 0 1em 0 0;}
+body #page .vendor-ticks .vendor-tick:last-child{margin-right: 0;}
+body #page .vendor-ticks .vendor-tick label{font-family: var(--global-font-family); font-size: 1.250em; font-weight: 500; color: #fff;}
+body #page .vendor-ticks .vendor-tick input[type=checkbox]{width: 22px; height: 22px; background: #fff;}
+body #page .vendor-ticks .vendor-tick input:checked{background: url('./tick.png') no-repeat; background-size: cover; background-position: center center;}
+body #page .brands-logo-section{margin-top: 6em;}
+body #page .brands-logo-section .brands-logos{max-width: 1156px; margin: 0 auto;}
+body #page .brands-logo-section .brands-logos ul{margin: 0; padding: 0; list-style: none; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;}
+body #page .brands-logo-section .brands-logos ul li img{width: 100%; height: auto; max-width: initial;}
+
+@media (max-width: 767px){
+    body{font-size: 12px; overflow-x: hidden;}
+    body .container{max-width: initial !important;}
+    body .flex-row{flex-direction: column;}
+    body .flex-row .col-1{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-2{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-3{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-4{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-5{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-6{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-7{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-8{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-9{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-10{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-11{flex: 0 0 100%; width: 100%;}
+    body .flex-row .col-12{flex: 0 0 100%; width: 100%;}
+    body #page .main-section .banner-ad{height: 15em;}
+    body #page .main-section .main-form h1{font-size: 2.5em; margin: 1em 0 0.5em 0;}
+    body #page .main-section .main-form p{line-height: 2.2;}
+    body #page .main-section .main-form .my-form form{flex-direction: column;}
+    body #page .main-section .main-form .my-form form .inputs{flex-direction: column; margin-right: 0;}
+    body #page .main-section .main-form .my-form form .inputs input.prod-input{border-radius: 999px; margin-bottom: 1em; width: 70%;}
+    body #page .main-section .main-form .my-form form .inputs select.unit-select{border-radius: 999px; margin-bottom: 1em; width: 70%;}
+    body #page .vendor-ticks{margin-bottom: 3em;}
+    body #page .brands-logo-section .brands-logos ul li{flex: 0 0 50%;}
+    body #page .brands-logo-section .brands-logos ul li img{transform: scale(0.6);}
+    body #page .vendor-ticks .vendor-tick-box{display: flex; flex-wrap: wrap; justify-content: center; margin-left: 2em;}
+    body #page .vendor-ticks .vendor-tick-box .vendor-tick{flex: 0 0 30%;}
+    body #page .vendor-ticks .vendor-head{margin-left: 2em;}
+}
