@@ -71,10 +71,10 @@ const Hero = () => {
         <section className="brands-logo-section">
             <div className="brands-logos">
                 <ul>
-                    <li><img src="./amazon.png" /></li>
-                    <li><img src="./walmart.png" /></li>
-                    <li><img src="./costco.png" /></li>
-                    <li><img src="./dollartree.png" /></li>
+                    <li><NavLink to="https://www.amazon.com" target="_blank"><img src="./amazon.png" /></NavLink></li>
+                    <li><NavLink to="https://www.walmart.com" target="_blank"><img src="./walmart.png" /></NavLink></li>
+                    <li><NavLink to="https://www.costco.com" target="_blank"><img src="./costco.png" /></NavLink></li>
+                    <li><NavLink to="https://www.dollartree.com " target="_blank"><img src="./dollartree.png" /></NavLink></li>
                 </ul>
             </div>
         </section>
