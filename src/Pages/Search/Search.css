@@ -1,11 +1,14 @@
-body #page .search-result-sec .banner-ad{text-align: center; height: 550px; background: rgba(65, 65, 65, 0.7); border-radius: 35px; padding: 1em;}
+body #page .search-result-sec .banner-ad{text-align: center; height: 550px; background: rgba(65, 65, 65, 0.7); border-radius: 35px; padding: 1em; margin-top: 20em;}
 body #page .search-result-sec .banner-ad p{font-family: var(--global-font-family); font-size: 0.875em; font-weight: 400; color: #fff;}
 body #page .search-result-sec .search-results{max-width: 550px; margin: 0 auto;}
-body #page .search-result-sec .search-results table{width: 100%; border-collapse: collapse; border-radius: 32px; color: #626161;}
-body #page .search-result-sec .search-results th{text-align: center; padding: 1em 0.5em; background: #423f3f; border: 1px solid #626161;}
-body #page .search-result-sec .search-results td{text-align: center; padding: 1em 0.5em; background: #423f3f; border: 1px solid #626161;}
-body #page .search-result-sec .search-results td button{padding: 1em 2em; border-radius: 999px; border: none; color: #000; background: #00ff00; font-weight: 700; font-size: 1em;}
-body #page .search-result-sec .search-results td button:hover{background: #03aa03; cursor: pointer; transition: 0.4s;}
+body #page .search-result-sec .search-results table{width: 100%; border-collapse: collapse; border-radius: 32px; color: #626161; margin-top: 6em;}
+body #page .search-result-sec .search-results th{text-align: center; padding: 0.5em 1em; background: #423f3f; border: 1px solid #626161; color: #10a810;}
+body #page .search-result-sec .search-results td{text-align: center; padding: 0.5em 3em 0.5em; background: #423f3f; border: 1px solid #626161;}
+body #page .search-result-sec .search-results td a .button{padding: 1em 2em; border-radius: 999px; border: none; color: #000; background: #00ff00; font-weight: 700; font-size: 1em;}
+body #page .search-result-sec .search-results td a .button:hover{background: #048604; cursor: pointer; transition: 0.4s; color: #048604;}
+body #page .search-result-sec .search-results td:nth-child(1){color: #626161;}
+body #page .search-result-sec .search-results p{font-size: 4em; text-align: center; color: #03aa03; font-weight: bold; text-transform: uppercase;}
+body #page .search-result-sec{margin-top: 10em;}
 
 @media (max-width: 767px){ 
 body #page .search-result-sec .banner-ad{height: 15em; margin-top: 5em;}

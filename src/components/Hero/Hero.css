@@ -37,6 +37,9 @@ body #page .brands-logo-section .brands-logos{max-width: 1156px; margin: 0 auto;
 body #page .brands-logo-section .brands-logos ul{margin: 0; padding: 0; list-style: none; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;}
 body #page .brands-logo-section .brands-logos ul li img{width: 100%; height: auto; max-width: initial;}
 
+body #page .main-form .submit-btn button{background: #12DE26; font-size: 0.938em; font-weight: 700; color: #021C04; border-radius: 999px; padding: 1em 2.5em; border: none;}
+body #page .main-form .submit-btn button:hover{cursor: pointer; background-color: #08b519;}
+
 @media (max-width: 767px){
     body{font-size: 12px; overflow-x: hidden;}
     body .container{max-width: initial !important;}
