@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./Hero.css"
 import Loading from '../../Pages/Loading/Loading';
@@ -17,14 +17,6 @@ const Hero = () => {
     const [walmartChecked, setWalmartChecked] = useState(false);
     const [costcoChecked, setCostcoChecked] = useState(false);
     const [dollartreeChecked, setDollartreeChecked] = useState(false);
-
-    const handleInputChange = (event) => {
-        setItem(event.target.value);
-    };
-
-    const handleUnitChange = (event) => {
-        setUnit(event.target.value);
-    };
 
     const constructAPIUrl = () => {
     const baseUrl = 'http://74.208.39.34/search';
@@ -54,12 +46,16 @@ const Hero = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    
+    if (!item || !unit) {
+        alert('Please provide both input text and unit.');
+        return;
+    }
+    
     if (!(amazonChecked || walmartChecked || costcoChecked || dollartreeChecked)) {
         alert('Please check at least one checkbox.');
         return;
     }
-
     setSearchClicked(true);
 
     const apiUrl = constructAPIUrl();
@@ -78,6 +74,8 @@ const Hero = () => {
           })
           .catch((error) => {
             console.error('Error fetching data:', error);
+            alert('An error occurred while fetching data.');
+            window.location.reload();
           })
           .finally(() => {
             setIsLoading(false); // Set isLoading to false after data is fetched (or if an error occurs)
@@ -101,8 +99,8 @@ const Hero = () => {
                                 <div className="my-form">
                                     <form onSubmit={handleSubmit}>
                                         <div className="inputs">
-                                            <input placeholder="Product name" className="prod-input" name="name" id="name" required="" type="text" value={item} onChange={handleInputChange}/>
-                                            <select value={unit} onChange={handleUnitChange} className="unit-select" name="desired_units" id="units" required="">
+                                            <input placeholder="Product name" className="prod-input" name="name" id="name" required="" type="text" value={item} onChange={(e) => setItem(e.target.value)}/>
+                                            <select value={unit} onChange={(e) => setUnit(e.target.value)} className="unit-select" name="desired_units" id="units" required="">
                                                 <option selected="" value="">Select Unit</option>
                                                 <option value="count">Count</option>
                                                 <optgroup label="Weights &amp; Volumes">
