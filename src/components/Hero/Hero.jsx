@@ -74,6 +74,7 @@ const Hero = () => {
           })
           .catch((error) => {
             console.error('Error fetching data:', error);
+            setIsLoading(false);
             alert('An error occurred while fetching data.');
             window.location.reload();
           })
