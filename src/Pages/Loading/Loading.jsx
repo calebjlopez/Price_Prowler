@@ -3,9 +3,7 @@ import './Loading.css'; // Import the CSS for styling
 
 const Loading = () => {
   return (
-    <div className="loading-container">
-      <div className="loading-spinner"></div>
-    </div>
+    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
   );
 };
 

@@ -28,7 +28,7 @@ const Search = (props) => {
                                             <th>Product Name</th>
                                             <th>Price</th>
                                             <th>PPU</th>
-                                            <th>Buy Now</th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>

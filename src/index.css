@@ -5,7 +5,7 @@ body .container{max-width: 1800px; margin:0 auto; width: 100%;}
 body .hidden{display:none !important;}
 body p{font-family: var(--global-font-family); font-size: var(--global-font-size); font-weight: var(--global-font-weight); margin:0 0 1em;}
 body a{color: #14db28; text-decoration:none; box-shadow:none; transition:0.4s;}
-body a:hover{color: #197d23; transition:0.4s;}
+body a:hover{color: #0ca41b; transition:0.4s;}
 body .flex-row{display: flex; flex-direction: row; flex-wrap: wrap;}
 body .flex-row .col-1{flex: 0 0 8.34%; width: 8.34%;}
 body .flex-row .col-2{flex: 0 0 16.67%; width: 16.67%;}

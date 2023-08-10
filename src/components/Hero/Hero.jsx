@@ -68,13 +68,13 @@ const Hero = () => {
           .then((response) => {
             // Handle the fetched data (e.g., update state to display it in the table)
             setData(response.data);
+            alert('Scroll down to see the results!');
             console.log(response.data);
             console.log(typeof(response.data));
             //goto('/search');
           })
           .catch((error) => {
             console.error('Error fetching data:', error);
-            setIsLoading(false);
             alert('An error occurred while fetching data.');
             window.location.reload();
           })
