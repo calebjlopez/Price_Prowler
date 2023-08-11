@@ -8,11 +8,12 @@ import { NavLink } from "react-router-dom";
 const Hero = () => {
     const [item, setItem] = useState('');
     const [unit, setUnit] = useState('');
+    
     const [data, setData] = useState(null);
+    
     const [isLoading, setIsLoading] = useState(false);
     const [searchClicked, setSearchClicked] = useState(false);
 
-    // State variables for checkboxes
     const [amazonChecked, setAmazonChecked] = useState(false);
     const [walmartChecked, setWalmartChecked] = useState(false);
     const [costcoChecked, setCostcoChecked] = useState(false);
@@ -22,7 +23,6 @@ const Hero = () => {
     const baseUrl = 'http://74.208.39.34/search';
     const queryParams = [`item=${item}`, `unit=${unit}`];
 
-    // Add vendor query params based on checkbox values
     if (amazonChecked) {
         queryParams.push('amazon=y');
     }
@@ -38,8 +38,6 @@ const Hero = () => {
     if (dollartreeChecked) {
         queryParams.push('dollartree=y');
     }
-
-    // Add other vendors as needed (e.g., walmart, dollartree)
 
     return `${baseUrl}?${queryParams.join('&')}`;
   };
@@ -61,18 +59,14 @@ const Hero = () => {
     const apiUrl = constructAPIUrl();
 
     setIsLoading(true);
-
-    // Use Axios to make the API request and fetch data in JSON format
         axios
           .get(apiUrl)
           .then((response) => {
-            // Handle the fetched data (e.g., update state to display it in the table)
             setData(response.data);
             alert('Scroll down to see the results!');
             console.log("URL :", apiUrl);
             console.log(response.data);
             console.log(typeof(response.data));
-            //goto('/search');
           })
           .catch((error) => {
             console.error('Error fetching data:', error);
@@ -81,7 +75,7 @@ const Hero = () => {
             window.location.reload();
           })
           .finally(() => {
-            setIsLoading(false); // Set isLoading to false after data is fetched (or if an error occurs)
+            setIsLoading(false);
           });
       };
 
@@ -136,7 +130,6 @@ const Hero = () => {
                                             </div>
                                         </div>
                                         <div className="submit-btn">
-                                            {/* <NavLink to="/search" className="submit-button" type="submit">Check</NavLink> */}
                                             <button type="submit">Check</button>
                                         </div>
                                     </form>
