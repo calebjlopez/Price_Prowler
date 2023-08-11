@@ -23,19 +23,19 @@ const Hero = () => {
     const queryParams = [`item=${item}`, `unit=${unit}`];
 
     // Add vendor query params based on checkbox values
-    if (amazon) {
+    if (amazonChecked) {
         queryParams.push('amazon=y');
     }
 
-    if (costco) {
+    if (costcoChecked) {
         queryParams.push('costco=y');
     }
 
-    if (walmart) {
+    if (walmartChecked) {
         queryParams.push('walmart=y');
     }
 
-    if (dollartree) {
+    if (dollartreeChecked) {
         queryParams.push('dollartree=y');
     }
 
@@ -69,12 +69,14 @@ const Hero = () => {
             // Handle the fetched data (e.g., update state to display it in the table)
             setData(response.data);
             alert('Scroll down to see the results!');
+            console.log("URL :", apiUrl);
             console.log(response.data);
             console.log(typeof(response.data));
             //goto('/search');
           })
           .catch((error) => {
             console.error('Error fetching data:', error);
+            setIsLoading(false);
             alert('An error occurred while fetching data.');
             window.location.reload();
           })
