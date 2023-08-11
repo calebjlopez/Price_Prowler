@@ -4,11 +4,8 @@ import Footer from '../../components/Footer/Footer'
 import './Search.css'
 
 const Search = (props) => {
-    console.log("Fetched Data :", props.data);
-
         return (
             <div>
-              {/* <Header /> */}
               <div id="page">
                 <div className="container">
                     <section className="search-result-sec">
@@ -56,8 +53,7 @@ const Search = (props) => {
             </section>
         </div>
         </div>
-              {/* <Footer /> */}
-            </div>
+    </div>
           )
     }
 
