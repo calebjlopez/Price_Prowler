@@ -64,9 +64,6 @@ const Hero = () => {
           .then((response) => {
             setData(response.data);
             alert('Scroll down to see the results!');
-            console.log("URL :", apiUrl);
-            console.log(response.data);
-            console.log(typeof(response.data));
           })
           .catch((error) => {
             console.error('Error fetching data:', error);
@@ -107,16 +104,12 @@ const Hero = () => {
                                                     <option value="g">Grams</option>
                                                     <option value="mg">Milligrams</option>
                                                     <option value="gal">Gallons</option>
-                                                    <option value="Liter">Liters</option>
-                                                    <option value="l">Milliliters</option>
+                                                    <option value="l">Liters</option>
+                                                    <option value="ml">Milliliters</option>
                                                     <option value="cups">Cups</option>
                                                     <option value="qt">Quarts</option>
                                                     <option value="pint">Pints</option>
-                                                </optgroup>
-                                                <optgroup label="Computer Measurements">
-                                                    <option value="Terabyte">Terabytes (TB)</option>
-                                                    <option value="Gigabyte">Gigabytes (GB)</option>
-                                                    <option value="Megabyte">Megabytes (MB)</option>
+                                                    <option value="floz">Liquid Ounce</option>
                                                 </optgroup>
                                             </select>
                                         </div>

@@ -32,8 +32,8 @@ const Search = (props) => {
                                     {props.data.map((itemData, index) => (
                                     <tr key={index}>
                                         <td>{itemData.name}</td>
-                                        <td>{itemData.ppu}</td>
                                         <td>{itemData.price}</td>
+                                        <td>{itemData.ppu}</td>
                                         <td><a href={itemData.href} target="_blank" className='button'>Buy Now</a></td>
                                     </tr>
                                     ))}
