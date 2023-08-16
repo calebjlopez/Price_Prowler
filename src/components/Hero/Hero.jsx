@@ -95,7 +95,7 @@ const Hero = () => {
                                         <div className="inputs">
                                             <input placeholder="Product name" className="prod-input" name="name" id="name" required="" type="text" value={item} onChange={(e) => setItem(e.target.value)}/>
                                             <select value={unit} onChange={(e) => setUnit(e.target.value)} className="unit-select" name="desired_units" id="units" required="">
-                                                <option selected="" value="">Select Unit</option>
+                                                <option defaultValue="Select Unit">Select Unit</option>
                                                 <option value="count">Count</option>
                                                 <optgroup label="Weights &amp; Volumes">
                                                     <option value="lb">Pounds</option>

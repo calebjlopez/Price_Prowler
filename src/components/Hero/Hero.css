@@ -5,7 +5,7 @@ body #page .vendor-ticks .vendor-tick{display: flex; align-items: center; margin
 body #page .vendor-ticks .vendor-tick:last-child{margin-right: 0;}
 body #page .vendor-ticks .vendor-tick label{font-family: var(--global-font-family); font-size: 1.250em; font-weight: 500; color: #fff;}
 body #page .vendor-ticks .vendor-tick input[type=checkbox]{width: 22px; height: 22px; background: #fff;}
-body #page .vendor-ticks .vendor-tick input[type=checkbox]:checked + span{width: 22px; height: 22px; background: url('../images/tick.png') no-repeat; background-size: cover; background-position: center center; position: absolute; bottom: 0; left: 0;}
+body #page .vendor-ticks .vendor-tick input[type=checkbox]:checked + span{width: 22px; height: 22px; background-size: cover; background-position: center center; position: absolute; bottom: 0; left: 0;}
 body #page .brands-logo-section{margin-top: 6em;}
 body #page .brands-logo-section .brands-logos{max-width: 1156px; margin: 0 auto;}
 body #page .brands-logo-section .brands-logos ul{margin: 0; padding: 0; list-style: none; display: flex; align-items: center; justify-content: space-between;}
@@ -31,7 +31,7 @@ body #page .vendor-ticks .vendor-head h2{font-family: var(--global-font-family);
 body #page .vendor-ticks .vendor-tick:last-child{margin-right: 0;}
 body #page .vendor-ticks .vendor-tick label{font-family: var(--global-font-family); font-size: 1.250em; font-weight: 500; color: #fff;}
 body #page .vendor-ticks .vendor-tick input[type=checkbox]{width: 22px; height: 22px; background: #fff;}
-body #page .vendor-ticks .vendor-tick input:checked{background: url('./tick.png') no-repeat; background-size: cover; background-position: center center;}
+body #page .vendor-ticks .vendor-tick input:checked{background-size: cover; background-position: center center;}
 body #page .brands-logo-section{margin-top: 6em;}
 body #page .brands-logo-section .brands-logos{max-width: 1156px; margin: 0 auto;}
 body #page .brands-logo-section .brands-logos ul{margin: 0; padding: 0; list-style: none; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;}
