@@ -117,7 +117,7 @@ const Hero = () => {
                                         <div className="vendor-head"><h2>VENDORS:</h2></div>
                                             <div className="vendor-tick-box">
                                                 <div className="vendor-tick"><input type="checkbox" name="options" id="amazon" checked={amazonChecked} onChange={(e) => setAmazonChecked(e.target.checked)}/><label >AMAZON</label></div>
-                                                <div className="vendor-tick"><input type="checkbox" name="options" id="walmart" checked={walmartChecked} onChange={(e) => setWalmartChecked(e.target.checked)}/><label >WALMART</label></div>
+                                                <div className="vendor-tick"><input type="checkbox" name="options" id="walmart" checked={walmartChecked} onChange={(e) => setWalmartChecked(e.target.checked)}/><label >TARGET</label></div>
                                                 <div className="vendor-tick"><input type="checkbox" name="options" id="costco" checked={costcoChecked} onChange={(e) => setCostcoChecked(e.target.checked)}/><label >COSTCO</label></div>
                                                 <div className="vendor-tick"><input type="checkbox" name="options" id="dollartree" checked={dollartreeChecked} onChange={(e) => setDollartreeChecked(e.target.checked)}/><label >DOLLARTREE</label></div>
                                             </div>

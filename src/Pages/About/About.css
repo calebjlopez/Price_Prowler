@@ -2,8 +2,10 @@ body #page .about-section{padding-top: 2em;}
 body #page .about-section .banner-ad{text-align: center; height: 600px; background: rgba(65, 65, 65, 0.7); border-radius: 35px; padding: 1em;}
 body #page .about-section .banner-ad p{font-family: var(--global-font-family); font-size: 0.875em; font-weight: 400; color: #fff;}
 body #page .about-section .about-txt{text-align: center;}
-body #page .about-section .about-txt h1{font-family: var(--global-font-family); font-size: 4em; font-weight: 600; color: #E3E3E3; margin: 0 0 0.6em 0;}
+body #page .about-section .about-txt h1{font-family: var(--global-font-family); font-size: 3em; font-weight: 600; color: #E3E3E3; margin: 1em 0 0.6em 0;}
+body #page .about-section .about-txt .mission{font-family: var(--global-font-family); font-size: 3em; font-weight: 600; color: #E3E3E3; margin: 2em 0 0.6em 0;}
 body #page .about-section .about-txt p{font-family: var(--global-font-family); font-size: 0.875em; font-weight: 400; line-height: 2.4; max-width: 680px; margin: 0 auto; color: #AEAEAE;}
+body #page .about-section .about-txt .para{font-family: var(--global-font-family); font-size: 1em; font-weight: 400; color: #AEAEAE;}
 
 @media (max-width: 767px){
     body{font-size: 12px; overflow-x: hidden;}
