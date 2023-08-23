@@ -1,6 +1,6 @@
 body footer#colophon{margin-top: 4.125em;}
 body footer#colophon .footer-links ul{margin: 0; padding: 0; list-style: none; display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
-body footer#colophon .footer-links ul li{padding-left: 1em; margin-right: 1em; position: relative; display: inline-flex; align-items: center;}
+body footer#colophon .footer-links ul li{padding-left: 1em; margin-right: 0.4em; position: relative; display: inline-flex; align-items: center;}
 body footer#colophon .footer-links ul li:before{content: '•'; font-size: 1.250em; font-weight: 600; color: #E3E3E3; position: absolute; left: 0;}
 body footer#colophon .footer-links ul li:nth-child(1){padding-left: 0;}
 body footer#colophon .footer-links ul li:last-child{margin-right: 0;}

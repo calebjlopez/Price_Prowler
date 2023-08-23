@@ -9,8 +9,8 @@ const Footer = () => {
             <ul>
                 <li><NavLink to="/about">About Us</NavLink></li>
                 <li><NavLink to="/contact">Contact</NavLink></li>
-                <li><NavLink to="#">Terms & Conditions</NavLink></li>
-                <li><NavLink to="#">Privacy Policy</NavLink></li>
+                {/* <li><NavLink to="#">Terms & Conditions</NavLink></li>
+                <li><NavLink to="#">Privacy Policy</NavLink></li> */}
             </ul>
         </div>
         <div className="copyright">
