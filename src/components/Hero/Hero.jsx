@@ -14,10 +14,10 @@ const Hero = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [searchClicked, setSearchClicked] = useState(false);
 
-    const [amazonChecked, setAmazonChecked] = useState(false);
-    const [walmartChecked, setWalmartChecked] = useState(false);
-    const [costcoChecked, setCostcoChecked] = useState(false);
-    const [dollartreeChecked, setDollartreeChecked] = useState(false);
+    const [amazonChecked, setAmazonChecked] = useState(true);
+    const [walmartChecked, setWalmartChecked] = useState(true);
+    const [costcoChecked, setCostcoChecked] = useState(true);
+    const [dollartreeChecked, setDollartreeChecked] = useState(true);
 
     const constructAPIUrl = () => {
     const baseUrl = 'https://api.thepriceprowler.com:80/search';
@@ -32,7 +32,7 @@ const Hero = () => {
     }
 
     if (walmartChecked) {
-        queryParams.push('walmart=y');
+        queryParams.push('target=y');
     }
 
     if (dollartreeChecked) {
@@ -116,7 +116,7 @@ const Hero = () => {
                                         <div className="vendor-ticks">
                                         <div className="vendor-head"><h2>VENDORS:</h2></div>
                                             <div className="vendor-tick-box">
-                                                <div className="vendor-tick"><input type="checkbox" name="options" id="amazon" checked={amazonChecked} onChange={(e) => setAmazonChecked(e.target.checked)}/><label >AMAZON</label></div>
+                                                <div className="vendor-tick"><input type="checkbox" name="options" id="amazon" checked={amazonChecked} onChange={(e) => setAmazonChecked(e.target.checked)} /><label >AMAZON</label></div>
                                                 <div className="vendor-tick"><input type="checkbox" name="options" id="walmart" checked={walmartChecked} onChange={(e) => setWalmartChecked(e.target.checked)}/><label >TARGET</label></div>
                                                 <div className="vendor-tick"><input type="checkbox" name="options" id="costco" checked={costcoChecked} onChange={(e) => setCostcoChecked(e.target.checked)}/><label >COSTCO</label></div>
                                                 <div className="vendor-tick"><input type="checkbox" name="options" id="dollartree" checked={dollartreeChecked} onChange={(e) => setDollartreeChecked(e.target.checked)}/><label >DOLLARTREE</label></div>
@@ -146,7 +146,7 @@ const Hero = () => {
                     <div className="brands-logos">
                         <ul>
                             <li><NavLink to="https://www.amazon.com" target="_blank"><img src="./amazon.png" /></NavLink></li>
-                            <li><NavLink to="https://www.walmart.com" target="_blank"><img src="./walmart.png" /></NavLink></li>
+                            <li><NavLink to="https://www.target.com/" target="_blank"><img src="./target.png" /></NavLink></li>
                             <li><NavLink to="https://www.costco.com" target="_blank"><img src="./costco.png" /></NavLink></li>
                             <li><NavLink to="https://www.dollartree.com " target="_blank"><img src="./dollartree.png" /></NavLink></li>
                         </ul>

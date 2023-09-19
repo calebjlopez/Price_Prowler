@@ -25,6 +25,7 @@ const Search = (props) => {
                                             <th>Product Name</th>
                                             <th>Price</th>
                                             <th>PPU</th>
+                                            <th>Vendor</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -34,6 +35,7 @@ const Search = (props) => {
                                         <td>{itemData.name}</td>
                                         <td>{itemData.price}</td>
                                         <td>{itemData.ppu}</td>
+                                        <td>{itemData.vendor}</td>
                                         <td><a href={itemData.href} target="_blank" className='button'>Buy Now</a></td>
                                     </tr>
                                     ))}
