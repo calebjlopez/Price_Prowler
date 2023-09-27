@@ -89,7 +89,7 @@ const Hero = () => {
                         <div className="col-8">
                             <div className="main-form">
                                 <h1>BEST PRICE<br/>LARGEST QUANTITY!</h1>
-                                <p>Find the cheapest items for sale online by the pound, ounce, gallon, quart, and more!. From Over Multiple venders </p>
+                                <p>Find the cheapest prices online. Search by the pound, ounce, gallon, quart, and more!</p>
                                 <div className="my-form">
                                     <form onSubmit={handleSubmit}>
                                         <div className="inputs">
