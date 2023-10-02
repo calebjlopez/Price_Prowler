@@ -20,7 +20,7 @@ const Hero = () => {
     const [dollartreeChecked, setDollartreeChecked] = useState(true);
 
     const constructAPIUrl = () => {
-    const baseUrl = 'https://api.thepriceprowler.com:80/search';
+    const baseUrl = 'https://api.thepriceprowler.com/search';
     const queryParams = [`item=${item}`, `unit=${unit}`];
 
     if (amazonChecked) {
