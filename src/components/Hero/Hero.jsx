@@ -127,6 +127,8 @@ const Hero = () => {
                                         </div>
                                     </form>
                                 </div>
+                                
+                                <p>As an Amazon Associate, commissions are earned from qualifying purchases at no cost to you.</p>
                             </div>
                         </div>
                         <div className="col-2">
