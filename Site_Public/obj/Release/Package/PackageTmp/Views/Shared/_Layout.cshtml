@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@(!string.IsNullOrEmpty(ViewBag.Page_Title) ? ViewBag.Page_Title + " | " : string.Empty)Price Prowler</title>
+    <link href="https://search.thepriceprowler.com/PP-Logo.png" rel="shortcut icon" type="image/x-icon" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.facebook.com/priceprowler" />
+    <meta property="og:title" content="@(!string.IsNullOrEmpty(ViewBag.Page_Title) ? ViewBag.Page_Title + " | " : string.Empty)Price Prowler" />
+    <meta property="og:description" content="@(!string.IsNullOrEmpty(ViewBag.Page_Description) ? ViewBag.Page_Description : "Track. Compare. Save.")" />
+    <meta property="og:image" content="https://search.thepriceprowler.com/PP-Logo.png" />
+
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="@(!string.IsNullOrEmpty(ViewBag.Page_Title) ? ViewBag.Page_Title + " | " : string.Empty)Price Prowler" />
+    <meta property="twitter:description" content="@(!string.IsNullOrEmpty(ViewBag.Page_Description) ? ViewBag.Page_Description : "Track. Compare. Save.")" />
+    <meta property="twitter:image" content="https://search.thepriceprowler.com/PP-Logo.png" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://ixdeliver-bkt-rsrc.cdn.ixdeliver.com/mdb.min.css">
+    <link rel="stylesheet" href="https://ixdeliver-bkt-rsrc.cdn.ixdeliver.com/all.min.css">
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    @RenderSection("page_content", required: false)
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand me-2" href="https://search.thepriceprowler.com">
+                    <img src="https://search.thepriceprowler.com/PP-Logo.png"
+                         height="64"
+                         alt="MDB Logo"
+                         loading="lazy"
+                         style="margin-top: -1px;" />
+                </a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarButtonsExample"
+                        aria-controls="navbarButtonsExample"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <h3 class="text-white fw-bold font-secondary" href="#">Price Prowler</h3>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="/">
+                            <h4 class="fw-bolder text-white me-3 px-3 nav-hover font-secondary">
+                                Home
+                            </h4>
+                        </a>
+                        <a href="/Platform/About">
+                            <h4 class="fw-bolder text-white me-3 px-3 nav-hover font-secondary">
+                                About Us
+                            </h4>
+                        </a>
+                        <a href="/Platform/Contact">
+                            <h4 class="fw-bolder text-white me-3 px-3 nav-hover font-secondary">
+                                Contact
+                            </h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    @RenderBody()
+    <footer class="text-center text-lg-start fixed-bottom">
+        <div class="text-center p-3 text-white">
+            © @DateTime.Now.Year The Price Prowler, LLC.
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://ixdeliver-bkt-rsrc.cdn.ixdeliver.com/mdb.min.js"></script>
+    <script type="text/javascript" src="https://ixdeliver-bkt-rsrc.cdn.ixdeliver.com/all.min.js"></script>
+    <script src="https://ixdeliver-bkt-rsrc.cdn.ixdeliver.com/cfAlert.min.js"></script>
+    @RenderSection("page_scripts", required: false)
+</body>
+</html>

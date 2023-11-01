@@ -1,0 +1,32 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(1, 15, 1), rgb(2, 57, 2)) !important;
+}
+
+body, header {
+    background:transparent !important;
+}
+
+.font-secondary {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.navbar
+{
+    box-shadow:none !important;
+}
+
+.nav-hover:hover {
+    cursor: pointer;
+    color: #12DE26 !important;
+}
+
+.btn-green {
+    background: #12DE26 !important;
+}
+
+.btn-green:hover {
+    background-color: #08b519 !important;
+}

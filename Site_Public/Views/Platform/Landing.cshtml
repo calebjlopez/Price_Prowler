@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Page_Title = "Pounce On Deals";
+}
+<section>
+    <div id="intro"
+         class="bg-image shadow-1-strong"
+         style=" background-image: url(https://images.unsplash.com/photo-1618945197420-dba362b35ff5?auto=format&fit=crop&q=80&w=2072&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); height: 500px; ">
+        <div class="mask text-white"
+             style="background-color: rgba(0, 0, 0, 0.6)">
+            <div class="
+                  container
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  text-center
+                  h-100
+                  ">
+                <div class="text-white font-secondary">
+                    <h1 class="mb-3">Unleash the Price Panther</h1>
+                    <h4 class="mb-4">Stalk and Seize Savings</h4>
+                    <a class="btn btn-outline-light btn-lg mb-3"
+                       href="#!"
+                       role="button">
+                        Begin Your Hunt
+                        <i class="fas fa-bullseye ms-1"></i>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container py-5 text-center justify-content-center align-content-center">
+    <div class="d-flex">
+        <input type="search"
+               class="form-control rounded me-1"
+               placeholder="Search"
+               aria-label="Search"
+               aria-describedby="search-addon" />
+        <a href="#!"
+           role="button"
+           class="btn btn-floating text-reset overflow-visible">
+            <i class="fas fa-search text-white"></i>
+        </a>
+    </div>
+    <button role="button" class="btn btn-green text-dark rounded-5 btn-lg mt-3 font-secondary" id="search-options-engage">
+        Options
+    </button>
+</div>
+<div class="container py-5" style="display:none;" id="pricing-table">
+    <p class="placeholder-glow">
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12"></span>
+    </p>
+</div>
+
+
+@{ 
+    Html.RenderPartial("~/Views/Platform/Partial/Landing/Search.cshtml");
+}
+
+@section page_scripts
+{
+    <script src="~/Scripts/Platform/Landing/Search.js"></script>
+}

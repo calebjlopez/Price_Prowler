@@ -1,9 +1,0 @@
-[[headers]]
-  for = "/sitemap.xml"
-    [headers.values]
-    Cache-Control = "public, max-age=3600"
-
-[[headers]]
-  for = "/ror.xml"
-    [headers.values]
-    Cache-Control = "public, max-age=3600"
